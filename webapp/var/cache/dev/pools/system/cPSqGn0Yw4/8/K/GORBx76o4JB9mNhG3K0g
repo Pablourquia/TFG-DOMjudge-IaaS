@@ -1,0 +1,95 @@
+<?php //App%255CController%255CAPI%255COrganizationController%2523deleteLogoAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Delete'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Delete')),
+        clone $p['FOS\\RestBundle\\Controller\\Annotations\\Delete'],
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                'contests/{cid}/organizations/{id}/logo',
+                'organizations/{id}/logo',
+            ],
+            'name' => [
+                'delete_organization_logo',
+            ],
+            'methods' => [
+                [
+                    'DELETE',
+                ],
+                [
+                    'DELETE',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                2 => 'ROLE_ADMIN',
+            ],
+        ],
+        'stdClass' => [
+            '_context' => [
+                3 => $o[4],
+                6 => $o[7],
+            ],
+            'response' => [
+                3 => '204',
+            ],
+            'description' => [
+                3 => 'Deleting logo succeeded',
+            ],
+            'logger' => [
+                4 => $o[5],
+                7 => $o[8],
+            ],
+            'filename' => [
+                4 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 1493,
+                7 => 1493,
+            ],
+            'method' => [
+                4 => 'instantiateAnnotiation',
+                7 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+            ],
+            'ref' => [
+                6 => '#/components/parameters/id',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[6],
+    ],
+    []
+); }];

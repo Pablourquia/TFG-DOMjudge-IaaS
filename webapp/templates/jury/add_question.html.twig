@@ -1,0 +1,53 @@
+{% extends "jury/base.html.twig" %}
+
+{% block body %}
+    <br>
+    <h1> Añadir preguntas a concurso </h1>
+    
+    <form enctype="multipart/form-data" action="{{ path('jury_add_question') }}" method="POST" name="add_questionnaire">
+        <label for= "id_selected_contest">Concurso:</label>
+        <select id="id_selected_contest" name="selected_contest">
+            {% for contest in contests %}
+                <option value="{{ contest.name }}">{{ contest.name }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <br>
+        <label for= "id_selected_question">Pregunta:</label>
+        <select id="id_selected_question" name="selected_question">
+            {% for question in questions %}
+                <option value="{{ question.name }}">{{ question.name }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <br>
+        <label for= "id_selected_type">Tipo de acción:</label>
+        <select id="id_selected_type" name="selected_type">
+            <option value="Add">Añadir</option>
+            <option value="Remove">Eliminar</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <h3>Pregunas asignadas a los concursos:</h3>
+        {% for contest in contests %}
+            <br>   
+            <h4>Preguntas asignadas al concurso {{contest.name}}</h3>
+            <ul>
+                {% for question_contest in question_contests %}
+                    {% if question_contest.contestName == contest.name %}
+                        {% for q1 in question_contest.questions %}
+                            {% for q2 in questions %}
+                                {% if q1 == q2.id %} 
+                                    <li> {{ q2.name }} </li>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endfor %}
+        <br>
+        <button type="submit">Enviar</button>
+    </form> 
+{% endblock %}

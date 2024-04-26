@@ -1,0 +1,58 @@
+{% extends "public/base.html.twig" %}
+
+{% block content %}
+
+<div class="span9 task_description">
+
+
+<h2>{{ question.name }}</h2>
+<br>
+{% if filePath %}
+    <a href="{{ path('download_file', {'filePath': filePath}) }}" class="btn btn-primary">Descargar Archivo</a>
+{% endif %}
+<br>
+<br>
+<h2>Respuestas:</h2>
+
+<form enctype="multipart/form-data" action="{{ path('jury_question_response') }}" method="post">
+    <input type="hidden" name="contestName" value="{{ name_contest }}">
+    
+    {% if question is defined and question is not null %}
+        <input type="hidden" name="questionName" value="{{ question.name }}">
+    {% endif %}
+    {% if question_type == "options" %}
+        <label for="options">Seleccione la opción correcta:</label><br>
+        {% for t in question.options %}
+            <input type="radio" id="{{ t }}" name="options" value="{{ t }}">
+            <label for="{{ t }}">{{ t }}</label><br>
+        {% endfor %}
+    {% endif %}
+    {% if question_type == "development" %}
+        {% for i in range(0, entries_quantity - 1) %}
+            <label for="question{{ i }}">Respuesta {{ i + 1 }}</label>
+            <input type="text" id="question{{ i }}" name="question{{ i }}" required>
+            <br>
+        {% endfor %}
+    {% endif %}
+
+
+    <br>
+    <br>
+    <button type="submit">Enviar</button>
+
+</form>
+<br>
+<br>
+<div class="row statement one_statement">
+    <div class="span9">
+        {% if boolean_vector[question.id] %}
+            <button type="button" style="background-color: green;">Respuesta Correcta</button>
+        {% else %}
+            <button type="button" style="background-color: red;">Respuesta Incorrecta</button>
+        {% endif %}
+    </div>
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,107 @@
+<?php //App%255CController%255CAPI%255CAccountController%2523singleAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/accounts/{id}',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+            'expression' => [
+                1 => 'is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_API_READER\')',
+            ],
+        ],
+        'stdClass' => [
+            'attachables' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            '_context' => [
+                2 => $o[6],
+                $o[4],
+                8 => $o[9],
+            ],
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'Returns the given account',
+            ],
+            'type' => [
+                3 => 'App\\Entity\\User',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                9 => $o[10],
+            ],
+            'filename' => [
+                4 => '/home/usuario/domjudge-8.2.3/lib/vendor/zircote/swagger-php/src/Attributes/Attachable.php',
+                6 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 14,
+                6 => 1493,
+                9 => 1493,
+            ],
+            'method' => [
+                4 => '__construct',
+                6 => 'instantiateAnnotiation',
+                9 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                4 => 'Attachable',
+                6 => 'DocParser',
+                9 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'OpenApi\\Attributes',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+            ],
+            'ref' => [
+                8 => '#/components/parameters/id',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[8],
+    ],
+    []
+); }];

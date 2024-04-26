@@ -1,0 +1,174 @@
+<?php //App%255CController%255CAPI%255CGroupController%2523addAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\MediaType'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_API_WRITER',
+            ],
+        ],
+        'stdClass' => [
+            '_context' => [
+                2 => $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+                14 => $o[15],
+                17 => $o[21],
+                $o[19],
+            ],
+            'required' => [
+                2 => true,
+            ],
+            'content' => [
+                2 => [
+                    $o[5],
+                    $o[11],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                15 => $o[16],
+                19 => $o[20],
+                21 => $o[22],
+            ],
+            'filename' => [
+                3 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                19 => '/home/usuario/domjudge-8.2.3/lib/vendor/zircote/swagger-php/src/Attributes/Attachable.php',
+                21 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 1493,
+                6 => 1493,
+                9 => 1493,
+                12 => 1493,
+                15 => 1493,
+                19 => 14,
+                21 => 1493,
+            ],
+            'method' => [
+                3 => 'instantiateAnnotiation',
+                6 => 'instantiateAnnotiation',
+                9 => 'instantiateAnnotiation',
+                12 => 'instantiateAnnotiation',
+                15 => 'instantiateAnnotiation',
+                19 => '__construct',
+                21 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                19 => 'Attachable',
+                21 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                19 => 'OpenApi\\Attributes',
+                21 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                21 => [
+                    $o[17],
+                ],
+            ],
+            'mediaType' => [
+                5 => 'multipart/form-data',
+                11 => 'application/json',
+            ],
+            'schema' => [
+                5 => $o[8],
+                11 => $o[14],
+            ],
+            'ref' => [
+                8 => '#/components/schemas/TeamCategory',
+                14 => '#/components/schemas/TeamCategory',
+            ],
+            'attachables' => [
+                17 => [
+                    $o[18],
+                ],
+            ],
+            'response' => [
+                17 => '201',
+            ],
+            'description' => [
+                17 => 'Returns the added group',
+            ],
+            'type' => [
+                18 => 'App\\Entity\\TeamCategory',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[17],
+    ],
+    []
+); }];

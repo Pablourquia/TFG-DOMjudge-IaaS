@@ -1,0 +1,90 @@
+<?php //App%255CController%255CAPI%255CGeneralInfoController%2523getUserAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/user',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'IS_AUTHENTICATED_FULLY',
+            ],
+        ],
+        'stdClass' => [
+            'attachables' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            '_context' => [
+                2 => $o[6],
+                $o[4],
+            ],
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'Information about the logged in user',
+            ],
+            'type' => [
+                3 => 'App\\Entity\\User',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+            ],
+            'filename' => [
+                4 => '/home/usuario/domjudge-8.2.3/lib/vendor/zircote/swagger-php/src/Attributes/Attachable.php',
+                6 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 14,
+                6 => 1493,
+            ],
+            'method' => [
+                4 => '__construct',
+                6 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                4 => 'Attachable',
+                6 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'OpenApi\\Attributes',
+                6 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

@@ -1,0 +1,260 @@
+<?php //App%255CController%255CAPI%255CGeneralInfoController%2523addProblemAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Tag'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Tag')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/problems',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_ADMIN',
+            ],
+        ],
+        'stdClass' => [
+            '_context' => [
+                2 => $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+                14 => $o[15],
+                17 => $o[18],
+                20 => $o[21],
+                23 => $o[24],
+                26 => $o[27],
+                29 => $o[30],
+                32 => $o[33],
+            ],
+            'name' => [
+                2 => 'Problems',
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                15 => $o[16],
+                18 => $o[19],
+                21 => $o[22],
+                24 => $o[25],
+                27 => $o[28],
+                30 => $o[31],
+                33 => $o[34],
+            ],
+            'filename' => [
+                3 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                21 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                24 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                27 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                30 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                33 => '/home/usuario/domjudge-8.2.3/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 1493,
+                6 => 1493,
+                9 => 1493,
+                12 => 1493,
+                15 => 1493,
+                18 => 1493,
+                21 => 1493,
+                24 => 1493,
+                27 => 1493,
+                30 => 1493,
+                33 => 1493,
+            ],
+            'method' => [
+                3 => 'instantiateAnnotiation',
+                6 => 'instantiateAnnotiation',
+                9 => 'instantiateAnnotiation',
+                12 => 'instantiateAnnotiation',
+                15 => 'instantiateAnnotiation',
+                18 => 'instantiateAnnotiation',
+                21 => 'instantiateAnnotiation',
+                24 => 'instantiateAnnotiation',
+                27 => 'instantiateAnnotiation',
+                30 => 'instantiateAnnotiation',
+                33 => 'instantiateAnnotiation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                18 => 'DocParser',
+                21 => 'DocParser',
+                24 => 'DocParser',
+                27 => 'DocParser',
+                30 => 'DocParser',
+                33 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+                21 => 'Doctrine\\Common\\Annotations',
+                24 => 'Doctrine\\Common\\Annotations',
+                27 => 'Doctrine\\Common\\Annotations',
+                30 => 'Doctrine\\Common\\Annotations',
+                33 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                21 => [
+                    $o[20],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                27 => [
+                    $o[26],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                33 => [
+                    $o[32],
+                ],
+            ],
+            'required' => [
+                5 => true,
+                11 => [
+                    'zip',
+                ],
+            ],
+            'content' => [
+                5 => [
+                    $o[8],
+                ],
+            ],
+            'mediaType' => [
+                8 => 'multipart/form-data',
+            ],
+            'schema' => [
+                8 => $o[11],
+            ],
+            'properties' => [
+                11 => [
+                    $o[14],
+                    $o[17],
+                ],
+                23 => [
+                    $o[26],
+                    $o[29],
+                ],
+            ],
+            'description' => [
+                14 => 'The problem archive to import',
+                17 => 'Optional: problem id to update.',
+                20 => 'Returns the ID of the imported problem and any messages produced',
+                26 => 'The ID of the imported problem',
+                32 => 'Messages produced while adding problems',
+            ],
+            'type' => [
+                14 => 'string',
+                17 => 'string',
+                23 => 'object',
+                26 => 'integer',
+                29 => 'array',
+                32 => 'string',
+            ],
+            'format' => [
+                14 => 'binary',
+            ],
+            'property' => [
+                14 => 'zip',
+                17 => 'problem',
+                26 => 'problem_id',
+                29 => 'messages',
+            ],
+            '_unmerged' => [
+                20 => [
+                    $o[23],
+                ],
+            ],
+            'response' => [
+                20 => '200',
+            ],
+            'items' => [
+                29 => $o[32],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[5],
+        $o[20],
+    ],
+    []
+); }];

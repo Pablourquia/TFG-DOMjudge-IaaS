@@ -1,0 +1,3 @@
+<?php //App%255CEntity%255CExecutableFile%2523getFileContent
+
+return [PHP_INT_MAX, []];
