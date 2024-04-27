@@ -32,19 +32,21 @@ class AddQuestionController extends BaseController {
             $question_contest = $this->getDoctrine()->getRepository(QuestionContest::class)->findOneBy(['contestName' => $selected_contest]);
             if ($question_contest) {
                 $question_ids = $question_contest->getQuestions();
-                var_dump($question_ids);
             }
             $selected_type = $request->request->get('selected_type');
             if ($selected_type == 'Add') {
                 if (!in_array($question->getId(), $question_ids)) {
                     $question_ids[] = $question->getId();
-                    var_dump($question_ids);
+                    $this->addFlash('success', 'Pregunta añadida correctamente');
                 }
+                $this->addFlash('success', 'La pregunta ya está añadida');
             } else {
                 $key = array_search($question->getId(), $question_ids);
                 if ($key !== false) {
                     unset($question_ids[$key]);
+                    $this->addFlash('success', 'Pregunta eliminada correctamente');
                 }
+                $this->addFlash('success', 'La pregunta no está añadida');
             }
             if ($question_contest) {
                 $question_contest->setQuestions($question_ids);

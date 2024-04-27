@@ -1,4 +1,4 @@
-# Generated from 'nginx-conf-inner.in' on Fri Apr 26 12:49:16 UTC 2024.
+# Generated from 'nginx-conf-inner.in' on Sat Apr 27 09:18:16 UTC 2024.
 
 # inner nginx configuration for DOMjudge
 # This is in a separate file to not have duplicate config

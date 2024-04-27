@@ -1,4 +1,4 @@
-# Generated from 'sudoers-domjudge.in' on Fri Apr 26 12:49:16 UTC 2024.
+# Generated from 'sudoers-domjudge.in' on Sat Apr 27 09:18:16 UTC 2024.
 
 # Example sudoers configuration for DOMjudge judgehosts.
 # Check the file paths (especially the chroot prefix),

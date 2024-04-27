@@ -1,5 +1,5 @@
 #!/bin/sh
-# Generated from 'dj_setup_database.in' on Fri Apr 26 12:49:16 UTC 2024.
+# Generated from 'dj_setup_database.in' on Sat Apr 27 09:18:16 UTC 2024.
 
 # This script allows one to perform DOMjudge database setup actions.
 # See usage below for possible commands and options.

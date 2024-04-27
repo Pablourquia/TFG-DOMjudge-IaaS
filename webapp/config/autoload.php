@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 /**
- * Generated from 'autoload.php.in' on Fri Apr 26 12:49:16 UTC 2024.
+ * Generated from 'autoload.php.in' on Sat Apr 27 09:18:16 UTC 2024.
  *
  * Autoload setup file for the Symfony application
  *
