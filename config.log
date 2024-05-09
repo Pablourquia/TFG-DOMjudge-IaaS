@@ -27,7 +27,7 @@ uname -v = #93-Ubuntu SMP Tue Sep 5 17:16:10 UTC 2023
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/usuario/.vscode-server/cli/servers/Stable-e170252f762678dec6ca2cc69aba1570769a5d39/server/bin/remote-cli/
+PATH: /home/usuario/.vscode-server/cli/servers/Stable-b58957e67ee1e712cebf466b995adf4c5307b2bd/server/bin/remote-cli/
 PATH: /home/usuario/.local/bin/
 PATH: /home/usuario/.local/bin/
 PATH: /usr/local/sbin/

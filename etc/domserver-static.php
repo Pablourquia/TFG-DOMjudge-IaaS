@@ -3,7 +3,7 @@
 // Use configure with the right parameters, and run 'make' and 'make install'
 // Variables you can change are in the Configuration section of the admin interface.
 
-// Generated from 'domserver-static.php.in' on Sat Apr 27 09:18:16 UTC 2024.
+// Generated from 'domserver-static.php.in' on Thu May  9 08:26:59 UTC 2024.
 
 define('DOMJUDGE_VERSION', '8.2.3');
 

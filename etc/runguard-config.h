@@ -1,4 +1,4 @@
-/* Generated from 'runguard-config.h.in' on Sat Apr 27 09:18:16 UTC 2024. */
+/* Generated from 'runguard-config.h.in' on Thu May  9 08:26:59 UTC 2024. */
 
 #ifndef _RUNGUARD_CONFIG_
 #define _RUNGUARD_CONFIG_

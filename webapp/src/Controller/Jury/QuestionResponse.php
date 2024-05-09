@@ -118,11 +118,11 @@ class QuestionResponse extends BaseController {
         $ids = $this->getDoctrine()->getRepository(QuestionContest::class)->findOneBy(['contestName' => $contestName])->getQuestions();
         $size = max($ids);
         $booleanVector = array_fill(0, $size + 1, false);
-        for ($i =0; $i < $size; $i++) {
-            $submission = $this->getDoctrine()->getRepository(SubmissionAnswer::class)->findOneBy(['question_id' => $ids[$i], 'user_id' => $this->getUser()->getUserid()]);
+        foreach ($ids as $id) {
+            $submission = $this->getDoctrine()->getRepository(SubmissionAnswer::class)->findOneBy(['question_id' => $id, 'user_id' => $this->getUser()->getUserid()]);
             if ($submission) {
                 if ($submission->getCorrect()) {
-                    $booleanVector[$ids[$i]] = true;
+                    $booleanVector[$id] = true;
                 }
             }
         }
